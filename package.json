@@ -1,6 +1,6 @@
 {
   "name": "chai-css-engine-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight CSS utility class parser",
   "main": "dist/chai-tailwind.js",
   "module": "dist/chai-tailwind.esm.js",
