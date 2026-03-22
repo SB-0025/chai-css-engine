@@ -17,26 +17,21 @@
   };
 
   const allElements = document.querySelectorAll("*")
-  
-  console.log(allElements)
 
   allElements.forEach((element) => {
-    console.log("element ", element)
     const classes = element.classList
 
-    console.log("classes of ecah elements -> ", classes)
     classes.forEach((eachClass) => {
-        console.log("Single Class ----> ", eachClass)
         const classValues = eachClass.split("-")
-        console.log("😍", classValues)
+
+        if (classValues.length < 3 || classValues[0] !== "chai") return;
+        
 
         const key = classValues[1]
         const value = classValues[2]
 
-        console.table(key, value)
 
         const cssProperty = utilityMap[key]
-        console.log("means -> ", cssProperty)
 
         if(!cssProperty) return
 
