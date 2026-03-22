@@ -25,16 +25,10 @@
         const classValues = eachClass.split("-")
 
         if (classValues.length < 3 || classValues[0] !== "chai") return;
-        
-
         const key = classValues[1]
         const value = classValues[2]
-
-
         const cssProperty = utilityMap[key]
-
         if(!cssProperty) return
-
         element.style[cssProperty] = valueHandler(key, value)
     })
   })
