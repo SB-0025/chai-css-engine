@@ -1,5 +1,5 @@
 {
-  "name": "chai-css-engine",
+  "name": "chai-css-engine-lib",
   "version": "1.0.0",
   "description": "A lightweight CSS utility class parser",
   "main": "dist/chai-tailwind.js",
